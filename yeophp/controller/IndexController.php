@@ -45,4 +45,28 @@ class IndexController extends YeoController
 		YeoLog::log('test','info','application',true);
 		echo 'finall';
 	}
+	public function dbtestAction()
+	{
+		$dbConfig = ['host' => '127.0.0.1','dbName' => 'demopy','user' => 'root','pwd' => ''];
+		$db = YeoDb::getInstance($dbConfig);
+		//select row
+		/*$sql = "select * from pyuser where id = :id ";
+		$db->selectRow($sql,[':id' => 1]);*/
+		//select all
+		/*$sql = "select * from pyuser where groupId = :id limit 10";
+		$db->selectAll($sql,[':id' => 1]);*/
+		//insert
+		/*$data = ['name' => 'test2','telphone' => '13612345678'];
+		$res = $db->insert('pyuser',$data);
+		var_dump($res);*/
+		//update
+		/*$data = ['name' => 'test3','telphone' => '13688888'];
+		$where = ['id' => 2];
+		$res = $db->update('pyuser',$data,$where);
+		var_dump($res);*/
+		//delete
+		$where = ['id' => 4];
+		$res = $db->delete('pyuser',$where);
+		var_dump($res);
+	}
 }
