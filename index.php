@@ -1,5 +1,5 @@
 <?php
-
+date_default_timezone_set('Asia/Shanghai');
 define('APP_PATH', realpath(dirname(__FILE__)));//设置项目根目录路径
 
 require APP_PATH.'/vendor/autoload.php';

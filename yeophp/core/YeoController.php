@@ -8,6 +8,7 @@
  */
 
 namespace Yeo\Core;
+use Yeo\Core\YeoTemplate;
 
 class YeoController   
 {
@@ -62,5 +63,11 @@ class YeoController
         } else {
             echo $jsonp . '(' . json_encode($data) . ')';
         }
+    }
+    public function display($fileName,$data)
+    {
+        
+        $template = new YeoTemplate();
+        $template->display($fileName,$data);
     }
 }

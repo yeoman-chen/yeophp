@@ -1,4 +1,5 @@
 <?php
+
 namespace Yeo\Core;
 use Yeo\Core\YeoDb;
 /**
@@ -31,7 +32,7 @@ class YeoCore
 	        } catch (Exception $e) {
 	                var_dump($e);
 	            }
-	        $this->yeoDb = new YeoDb();
+	        //$this->yeoDb = YeoDb::getInstance($array = []);
         } else {
             echo ("action not find");
         }
