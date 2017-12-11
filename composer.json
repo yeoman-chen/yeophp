@@ -2,7 +2,7 @@
 	"name": "yeoman/yeophp",
     "description": "A simple PHP framework for api or cli application",
     "keywords": ["microframework","api","cli"],
-    "homepage": "https://www.yeoman.com",
+    "homepage": "http://www.yeoman.vip",
     "license": "MIT",
     "require": {
         "php": ">=5.5.0"
